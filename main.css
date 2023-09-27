@@ -1,8 +1,79 @@
 html {
     font-size: 22px;
+    text-align: center;
+    font-family: monospace;
+
+}
+
+button {
+    background-color: indianred;
+    /* Green */
+    border: none;
+    font-family: monospace;
+    border-radius: 12px;
+    color: white;
+    padding: 20px 35px;
+    text-align: center;
+    text-decoration: solid;
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+nav ul {
+    text-align: center;
+    flex-direction: column;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    margin: 0.5em;
+    padding: 0;
+    font-size: 1.5em;
+}
+
+[aria-current=page] {
+    text-decoration: underline;
+}
+
+nav a {
+    text-decoration: none;
+    color: white
+}
+
+a {
+    color: darkgrey;
+}
+
+a:visited {
+    color: aqua;
+}
+
+nav a:visited {
+    color: white;
+}
+
+@media (min-width: 45em) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav li {
+        font-size: 1em;
+    }
 }
 
 body {
-    background-color: darkolivegreen;
-    color: wheat;
+    background-color: rgb(63, 71, 64);
+    color: rgb(255, 255, 255);
+}
+
+canvas {
+    border: 2px solid white;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
